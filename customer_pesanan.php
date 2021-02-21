@@ -57,6 +57,7 @@
 											<th>Tanggal</th>
 											<th>Nama Penerima</th>
 											<th>Total Bayar</th>
+                                            <th>No. Resi</th>
 											<th class="text-center">Status</th>
 											<th class="text-center">OPSI</th>
 										</tr>
@@ -73,6 +74,7 @@
 												<td><?php echo $i['invoice_tanggal'] ?></td>
 												<td><?php echo $i['invoice_nama'] ?></td>
 												<td><?php echo "Rp. ".number_format($i['invoice_total_bayar'])." ,-" ?></td>
+                                                <td><?php echo  $i['invoice_resi'] ?></td>
 												<td class="text-center">
 													<?php 
 													if($i['invoice_status'] == 0){
@@ -110,6 +112,11 @@
 										?>
 									</tbody>
 								</table>
+                                <div id="cekresicom_id"></div>
+                                <script type="text/javascript" src="https://cekresi.com/widget/widgetcekresicom_v1.js"></script>
+                                <script type="text/javascript">
+                                    init_widget_cekresicom('w2',370,100)
+                                </script>
 							</div>
 							
 

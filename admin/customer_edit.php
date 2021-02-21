@@ -15,21 +15,21 @@
 
   <section class="content">
     <div class="row">
-      <section class="col-lg-6 col-lg-offset-3">       
+      <section class="col-lg-6 col-lg-offset-3">
         <div class="box box-info">
 
           <div class="box-header">
             <h3 class="box-title">Edit customer</h3>
-            <a href="customer.php" class="btn btn-info btn-sm pull-right"><i class="fa fa-reply"></i> &nbsp Kembali</a> 
+            <a href="customer.php" class="btn btn-info btn-sm pull-right"><i class="fa fa-reply"></i> &nbsp Kembali</a>
           </div>
           <div class="box-body">
 
 
-            <?php 
+            <?php
             $id = $_GET['id'];
-            $data = mysqli_query($koneksi,"select * from customer where customer_id='$id'");
-            while($d = mysqli_fetch_array($data)){
-              ?>
+            $data = mysqli_query($koneksi, "select * from customer where customer_id='$id'");
+            while ($d = mysqli_fetch_array($data)) {
+            ?>
               <form action="customer_update.php" method="post">
                 <div class="form-group">
                   <label>Nama</label>
@@ -62,12 +62,10 @@
                   <input type="submit" class="btn btn-sm btn-primary" value="Simpan">
                 </div>
               </form>
-              <?php 
+            <?php
             }
             ?>
-
           </div>
-
         </div>
       </section>
     </div>
