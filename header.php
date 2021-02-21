@@ -6,9 +6,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>TOKO ONLINE PAKAIAN TENUN TERBAIK</title>
+	<title>Elok Cookies</title>
 
-	<!-- Google font -->
+    <!-- Logo -->
+    <link rel="icon" href="./assets/dist/img/product/logo.png">
+
+    <!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Hind:400,700" rel="stylesheet">
 
 	<!-- Bootstrap -->
@@ -93,7 +96,7 @@ if($file == "checkout.php"){
 					<!-- Logo -->
 					<div class="header-logo">
 						<a class="logo" href="#">
-							<img src="frontend/img/capture.PNG" alt="" style="width: 95px">
+							<img src="./assets/dist/img/product/logo.png" alt="" style="width: 150px">
 						</a>
 					</div>
 					<!-- /Logo -->
