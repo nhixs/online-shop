@@ -1,7 +1,7 @@
 <?php 
 
 $koneksi = mysqli_connect(
-    "https://www.db4free.net/",
+    "db4free.net",
     "nhisx_skirpsi@localhost",
     "bagus246" ,
     "elok_cookies");
